@@ -1,0 +1,31 @@
+<?php
+
+class SobytiyaController extends Controller
+{
+	///public $defaultAction = 'one';
+      public function actions()
+  	{
+  		return array(
+  			// captcha action renders the CAPTCHA image displayed on the contact page
+  			'captcha'=>array(
+  				'class'=>'CCaptchaAction',
+  				'backColor'=>0xFFFFFF,
+  			),
+
+  		);
+  	}
+  	public function actionIndex()
+  	{
+      //$models = Page::find()->select(['title'])->where(['category_id' => $id])->indexBy('id')->column();
+              $models = Page::model()->findAllByAttributes(array('category_id'=>7));
+              $category = Category::model()->findByPk($id);
+  		$this->render('index', array('models'=>$models, 'category'=>$category));
+  	}
+          public function actionView($id)
+  	{
+              $model = Page::model()->findByPk($id);
+
+  		$this->render('view', array('model'=>$model));
+  	}
+
+  }

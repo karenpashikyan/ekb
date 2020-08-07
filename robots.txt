@@ -1,0 +1,6 @@
+﻿User-agent: *
+Disallow: /admin/
+Allow: /admin/request/create
+
+Sitemap: https://www.master-na-chas.info/sitemap.xml
+ 

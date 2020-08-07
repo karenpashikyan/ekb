@@ -1,0 +1,894 @@
+*{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+@media all and (min-width: 320px){
+
+  body{
+
+    background-image: url(bg.png);
+    background-repeat: repeat;
+  }
+
+  .all{
+    display:flex;
+    flex-direction: column-reverse;
+    width: 320px;
+
+    align-items: center;
+    margin: 0 auto;
+  }
+  header{
+    height: 231px;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .ekb{
+display: none;
+  }
+  .krasnoyarsk{
+display: none;
+  }
+  .nizhnij_novgorod{
+  display: none;
+  }
+  .center_logo>img{
+  width: 100%;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  }
+  .chelyabinsk{
+display: none;
+  }
+  .spb{
+display: none;
+  }
+  .center{
+    margin-top: 10px;
+  height: 131px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0px;
+  align-items: center;
+
+
+  }
+  footer{
+
+    height: 191px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+  }
+  .center_logo{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  flex: 2;
+  }
+
+  .center1{
+
+  height: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: #601b03;
+    font-weight: bold;
+    line-height: 100%;
+    text-shadow: 1px -1px 1px white, -1px 1px 1px black;
+
+  align-items: center;
+text-decoration: none;
+  }
+
+
+  .center2{
+  height: 20px;
+  width: 100%;
+  display: flex;
+  justify-content:center;
+  color: #601b03;
+    font-weight: bold;
+    line-height: 100%;
+    text-shadow: 1px -1px 1px white, -1px 1px 1px black;
+
+  align-items: center;
+text-decoration: none;
+
+  }
+
+
+  .city{
+  width: 170px;
+  height: 45px;
+  position: relative;
+  /* border: 2px solid #000; */
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  list-style-position:inside;
+  list-style: none;
+  }
+  .town{
+  display: flex;
+  width: 250px;
+  justify-content: center;
+  align-items: center;
+  }
+  .town_moscow{
+  display: flex;
+  width: 100px;
+
+  justify-content: center;
+  align-items: center;
+  }
+  .city>li>a{
+  text-decoration: none;
+    color: #0073af;
+    text-shadow: 1px 1px 1px black, -1px -1px 1px white;
+    font-size: 12px;
+  }
+
+  a:hover{
+  text-decoration: none;
+  background: none;
+  opacity: 0.7;
+  }
+  .novosibirsk{
+  display: none;
+  }
+  .krasnodar{
+display: none;
+  }
+  ul{
+    color: #0073af;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px black, -1px -1px 1px white;
+  }
+
+  .Dolgoprudnyj{
+  position: absolute;
+  top: -50px;
+  left: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  }
+  .Dolgoprudnyj_li{
+  position: absolute;
+  top: 20px;
+    left: 30px;
+    font-size: 13px;
+  }
+  .Mytishchi{
+  position: absolute;
+  top: -35px;
+  left: 102px;
+  width: 90px;
+  }
+  .Odincova{
+  position: absolute;
+  top: 33px;
+  left: -94px;
+  display: flex;
+  flex-direction: row-reverse;
+  }
+  .Odincova_li{
+  position: absolute;
+  top: 30px;
+  left: -25px;
+  }
+  .podolsk{
+  position: absolute;
+    top: 80px;
+    left: 35px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .podolsk_li{
+  position: absolute;
+  top: -15px;
+  left: 20px;
+  font-size: 13px;
+  }
+  .Balashiha{
+  position: absolute;
+  top: 0px;
+  width: 90px;
+      right: -118px;
+  }
+  .Lyubercy{
+  position: absolute;
+  top: 30px;
+  width: 90px;
+    right: -118px;
+  }
+
+
+  .Vidnoe{
+  position: absolute;
+  top: 58px;
+  right: -82px;
+    /* left: 102px; */
+    width: 80px;
+  }
+
+  .Krasnogorsk{
+  position: absolute;
+  top: 0px;
+      left: -110px;
+      display: flex;
+      flex-direction: row-reverse;
+
+  }
+  .Krasnogorsk_li{
+  position: absolute;
+  top: -1px;
+      left: -25px;
+  }
+  .Novaya_Moskva{
+    position: absolute;
+    width: 130px;
+    top: 65px;
+    left: -84px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .Novaya_Moskva_li{
+  position: absolute;
+  top: 60px;
+    left: 10px;
+  }
+  .Himki{
+  position: absolute;
+  top: -30px;
+    left: -54px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .Himki_li{
+  position: absolute;
+  top: -30px;
+    left: 10px;
+  }
+
+
+  footer{
+  display: none;
+  }
+  .erevan{
+display: none;
+  }
+
+  .ufa{
+
+display: none;
+  }
+  .footer{
+display: none;
+  }
+
+.city_mob{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+      width: 80%;
+      padding-left: 20px;
+}
+.city_mob>a{
+  width: 70%;
+  margin-bottom: 10px;
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items:
+
+}
+}
+@media all and (min-width: 375px){
+  .all{
+    width: 375px;
+  }
+}
+  @media all and (min-width: 425px){
+    .all{
+      width: 425px;
+    }
+  }
+  @media all and (min-width: 40em){
+
+    .city_mob{
+      display: none;
+    }
+body{
+  width: 100%;
+  background-image: url(bg.png);
+  background-repeat: repeat;
+}
+
+.all{
+  display:flex;
+  flex-direction: column;
+  width: 768px;
+
+  align-items: center;
+  margin: 0 auto;
+}
+header{
+  height: 231px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ekb{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.krasnoyarsk{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+.nizhnij_novgorod{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+.center_logo>img{
+  width: 90%;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+.chelyabinsk{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+.spb{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.center{
+  height: 191px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 60px;
+  align-items: center;
+
+
+}
+footer{
+
+    height: 191px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+}
+.center_logo{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  flex: 2;
+}
+
+.center1{
+
+  height: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-shadow: 1px 1px 1px black, -1px -1px 1px white;
+  font-size: 20px;
+  align-items: center;
+  text-decoration: none;
+
+}
+
+
+.center2{
+height: 20px;
+width: 100%;
+  display: flex;
+  justify-content:center;
+  text-shadow: 1px 1px 1px black, -1px -1px 1px white;
+  font-size: 20px;
+  align-items: center;
+text-decoration: none;
+
+}
+
+
+.city{
+  width: 170px;
+height: 45px;
+position: relative;
+/* border: 2px solid #000; */
+display:flex;
+justify-content: center;
+align-items: center;
+list-style-position:inside;
+}
+.town{
+display: flex;
+width: 200px;
+justify-content: center;
+align-items: flex-end;
+}
+.town_moscow{
+  display: flex;
+  width: 150px;
+
+justify-content: center;
+align-items: center;
+}
+.city>li>a{
+text-decoration: none;
+    color: #0073af;
+    text-shadow: 1px 1px 1px black, -1px -1px 1px white;
+width: 200px;
+    font-size: 23px;
+}
+
+a:hover{
+text-decoration: none;
+background: none;
+opacity: 0.7;
+}
+.novosibirsk{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+.krasnodar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+ul{
+    color: #0073af;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px black, -1px -1px 1px white;
+}
+
+.Dolgoprudnyj{
+  position: absolute;
+  top: -60px;
+  left: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.Dolgoprudnyj_li{
+  position: absolute;
+  top: 30px;
+    left: 60px;
+      font-size: 23px;
+}
+.Mytishchi{
+  position: absolute;
+  top: -30px;
+left: 132px;
+width: 200px;
+}
+.Odincova{
+  position: absolute;
+  top: 30px;
+  left: -160px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.Odincova_li{
+  position: absolute;
+  top: 30px;
+  left: -25px;
+}
+.podolsk{
+  position: absolute;
+    top: 80px;
+    left: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.podolsk_li{
+  position: absolute;
+  top: -20px;
+left: 40px;
+  font-size: 23px;
+}
+.Balashiha{
+  position: absolute;
+  top: 0px;
+  right: -210px;
+  width: 210px;
+}
+.Lyubercy{
+  position: absolute;
+  top: 30px;
+  right: -200px;
+    width: 200px;
+}
+
+
+.Vidnoe{
+  position: absolute;
+  top: 60px;
+    right: -130px;
+    width: 150px;
+}
+
+.Krasnogorsk{
+  position: absolute;
+  top: 0px;
+      left: -190px;
+      display: flex;
+      flex-direction: row-reverse;
+
+}
+.Krasnogorsk_li{
+  position: absolute;
+  top: 0px;
+      left: -25px;
+}
+.Novaya_Moskva{
+  position: absolute;
+  width: 230px;
+  top: 60px;
+    left: -174px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.Novaya_Moskva_li{
+  position: absolute;
+  top: 60px;
+    left: 30px;
+}
+.Himki{
+  position: absolute;
+  top: -30px;
+    left: -74px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.Himki_li{
+  position: absolute;
+  top: -30px;
+    left: 30px;
+}
+
+
+footer{
+  height: 191px;
+  width: 100%;
+}
+.erevan{
+width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.ufa{
+
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer{
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+}
+  }
+  @media all and (min-width: 40em){
+    .city_mob{
+      display: none;
+    }
+body{
+  width: 100%;
+  background-image: url(bg.png);
+  background-repeat: repeat;
+}
+
+.all{
+  display:flex;
+  flex-direction: column;
+  width: 1440px;
+
+  align-items: center;
+  margin: 0 auto;
+}
+header{
+  height: 231px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ekb{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.krasnoyarsk{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+.nizhnij_novgorod{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+.center_logo>img{
+  width: 90%;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+.chelyabinsk{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+.spb{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.center{
+  height: 191px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 60px;
+  align-items: center;
+
+
+}
+footer{
+
+    height: 191px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+}
+.center_logo{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  flex: 2;
+}
+
+.center1{
+
+  height: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-shadow: 1px 1px 1px black, -1px -1px 1px white;
+  font-size: 20px;
+  align-items: center;
+
+}
+
+
+.center2{
+height: 20px;
+width: 100%;
+  display: flex;
+  justify-content:center;
+  text-shadow: 1px 1px 1px black, -1px -1px 1px white;
+  font-size: 20px;
+  align-items: center;
+
+
+}
+
+
+.city{
+  width: 170px;
+height: 45px;
+position: relative;
+/* border: 2px solid #000; */
+display:flex;
+justify-content: center;
+align-items: center;
+list-style-position:inside;
+}
+.town{
+display: flex;
+width: 250px;
+justify-content: center;
+align-items: center;
+}
+.town_moscow{
+  display: flex;
+  width: 150px;
+
+justify-content: center;
+align-items: center;
+}
+.city>li>a{
+text-decoration: none;
+    color: #0073af;
+    text-shadow: 1px 1px 1px black, -1px -1px 1px white;
+width: 200px;
+    font-size: 23px;
+}
+
+a:hover{
+text-decoration: none;
+background: none;
+opacity: 0.7;
+}
+.novosibirsk{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+.krasnodar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+ul{
+    color: #0073af;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px black, -1px -1px 1px white;
+}
+
+.Dolgoprudnyj{
+  position: absolute;
+  top: -60px;
+  left: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.Dolgoprudnyj_li{
+  position: absolute;
+  top: 30px;
+    left: 60px;
+}
+.Mytishchi{
+  position: absolute;
+  top: -30px;
+left: 132px;
+}
+.Odincova{
+  position: absolute;
+  top: 30px;
+  left: -160px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.Odincova_li{
+  position: absolute;
+  top: 30px;
+  left: -25px;
+}
+.podolsk{
+  position: absolute;
+    top: 80px;
+    left: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.podolsk_li{
+  position: absolute;
+  top: -20px;
+left: 40px;
+  font-size: 23px;
+}
+.Balashiha{
+  position: absolute;
+  top: 0px;
+  right: -225px;
+  width: 200px;
+}
+.Lyubercy{
+  position: absolute;
+  top: 30px;
+  right: -225px;
+    width: 200px;
+}
+
+
+.Vidnoe{
+  position: absolute;
+  top: 60px;
+    right: -130px;
+}
+
+.Krasnogorsk{
+  position: absolute;
+  top: 0px;
+      left: -190px;
+      display: flex;
+      flex-direction: row-reverse;
+
+}
+.Krasnogorsk_li{
+  position: absolute;
+  top: 0px;
+      left: -25px;
+}
+.Novaya_Moskva{
+  position: absolute;
+  width: 230px;
+  top: 60px;
+    left: -174px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.Novaya_Moskva_li{
+  position: absolute;
+  top: 60px;
+    left: 30px;
+}
+.Himki{
+  position: absolute;
+  top: -30px;
+    left: -74px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.Himki_li{
+  position: absolute;
+  top: -30px;
+    left: 30px;
+}
+
+
+footer{
+  height: 191px;
+  width: 100%;
+}
+.erevan{
+width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.ufa{
+
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer{
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+}
+}
