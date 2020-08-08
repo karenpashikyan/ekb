@@ -1,7 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="3245d928-eb33-4e56-8945-21cb026146f1" name="Default Changelist" comment="" />
+    <list default="true" id="3245d928-eb33-4e56-8945-21cb026146f1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protected/config/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/config/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protected/models/Request.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/models/Request.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protected/runtime/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/application.log" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +39,9 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1fm8cyp59lf1o4LepIhJesW4q9K" />
   <component name="ProjectViewState">
@@ -28,21 +61,54 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1596811990995</updated>
-      <workItem from="1596811992050" duration="1070000" />
+      <workItem from="1596811992050" duration="3446000" />
+      <workItem from="1596859227501" duration="7835000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="0" y="0" width="587" height="680" key="find.popup" timestamp="1596812464115">
+    <state x="473" y="43" key="RollbackChangesDialog" timestamp="1596859719207">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="0" y="0" width="587" height="680" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1596812464115" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1596812472455">
+    <state x="473" y="43" key="RollbackChangesDialog/0.0.1280.680@0.0.1280.680" timestamp="1596859719207" />
+    <state x="441" y="0" width="587" height="680" key="find.popup" timestamp="1596814138979">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1596812472455" />
+    <state x="441" y="0" width="587" height="680" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1596814138979" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1596814099561">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1596814099561" />
   </component>
 </project>

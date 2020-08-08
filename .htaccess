@@ -1,3 +1,4 @@
+AddDefaultCharset UTF-8
 RewriteEngine On
 
 Options +FollowSymLinks
@@ -6,6 +7,5 @@ RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . index.php
-RewriteCond %{HTTP_HOST} ^master-na-chas.info/$ [NC]
-RewriteRule ^(.*)$ https://www.master-na-chas.info/$1 [R=301,L]
+
 
