@@ -35,6 +35,10 @@ class CategoryController extends Controller
 				'actions'=>array('index','create','update','delete'),
 				'roles'=>array('5'),
 			),
+            array('allow',  // allow all users to perform 'index' and 'view' actions
+                'actions'=>array('index','create','update','delete'),
+                'roles'=>array('6'),
+            ),
 			array('deny',  // deny all users
 				'users'=>array('*'),
 			),

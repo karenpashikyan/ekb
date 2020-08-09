@@ -35,5 +35,6 @@ $this->menu=array(
 		'debt',
 		'money',
 		'manager',
+        'city'
 	),
 )); ?>

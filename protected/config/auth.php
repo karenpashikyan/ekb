@@ -51,4 +51,13 @@ return array(
 		'bizRule' => null,
 		'data' => null
 	),
+    '6' => array(
+        'type' => CAuthItem::TYPE_ROLE,
+        'description' => 'Host',
+        'children' => array(
+            'Gadmin',         // позволим админу всё, что позволено модератору - высший админ
+        ),
+        'bizRule' => null,
+        'data' => null
+    ),
 );

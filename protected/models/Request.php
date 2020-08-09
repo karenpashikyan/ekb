@@ -183,17 +183,17 @@ class Request extends CActiveRecord
             $headers = "From: $name <{$this->attributes["short_discription"]}>\r\n" .
                 "Reply-To: " . Yii::app()->params['adminEmail'] . "\r\n" .
                 "MIME-Version: 1.0\r\n" .
-                "Content-Type: text/plain; charset=UTF-8";
+                "Content-Type: text/html; charset=utf-8";
 
             $message = "
-            Заявка № " . $currentRequestOrder . " <br>
-            Промокод: " . $this->attributes["user_id"] . " <br>
-            Имя: " . $this->title . " <br>
-            Телефон: " . $this->time_start . " <br>
-            Адрес: " . $this->attributes["address"] . " <br>
-            E-mail: " . $this->attributes["short_description"] . " <br>
-            Комментарий: " . $this->description . " <br>
-            Время отправки: " . $this->getLocalTime(2,$this->attributes["time_finish"]) . " <br>
+            Заявка № " . $currentRequestOrder . "<br>
+            Промокод: " . $this->attributes["user_id"] . "<br>
+            Имя: " . $this->title . "<br>
+            Телефон: " . $this->time_start . "<br>
+            Адрес: " . $this->attributes["address"] . "<br>
+            E-mail: " . $this->attributes["short_description"] . "<br>
+            Комментарий: " . $this->description . "<br>
+            Время отправки: " . $this->getLocalTime(2,$this->attributes["time_finish"]) . "<br>
             ";
 
             mail(Yii::app()->params['adminEmail'], $subject, $message, $headers);

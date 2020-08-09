@@ -19,9 +19,11 @@
  * @property string $debt
  * @property string $money
  * @property string $manager
+ * @property string $city
  */
 class User extends CActiveRecord
 {
+    const ROLE_HOST = 'host';
 	const ROLE_TOPADMIN = 'gadmin';
 	const ROLE_ADMIN = 'admin';
 	const ROLE_MODER = 'moderator';
@@ -47,7 +49,7 @@ class User extends CActiveRecord
 		return array(
 			array('username, password, email, phone', 'required'),
 			array('created, ban, role, request_id', 'numerical', 'integerOnly'=>true),
-			array('username, password, bankcard, debt, money, manager', 'length', 'max'=>50),
+			array('username, password, bankcard, debt, money, manager, city', 'length', 'max'=>50),
 			array('phone, passport', 'length', 'max'=>20),
 			array('email', 'length', 'max'=>255),
 			array('photo', 'safe'),
@@ -56,7 +58,7 @@ array('verifyCode', 'captcha', 'allowEmpty'=>!CCaptcha::checkRequirements(),'on'
 			array('verifyCode', 'captcha', 'allowEmpty'=>!CCaptcha::checkRequirements(),'on'=>'registration'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, username, password, created, ban, role, request_id, phone, passport, photo, bankcard, email, debt, money, manager', 'safe', 'on'=>'search'),
+			array('id, username, password, created, ban, role, request_id, phone, passport, photo, bankcard, email, debt, money, manager, city', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -94,6 +96,7 @@ array('verifyCode', 'captcha', 'allowEmpty'=>!CCaptcha::checkRequirements(),'on'
 			'money' => 'Баланс',
 			'manager' => 'Менеджер',
 			'verifyCode'=>'Код с картинки',
+            'city' => 'Город',
 		);
 	}
 
@@ -130,7 +133,7 @@ array('verifyCode', 'captcha', 'allowEmpty'=>!CCaptcha::checkRequirements(),'on'
 		$criteria->compare('debt',$this->debt,true);
 		$criteria->compare('money',$this->money,true);
 		$criteria->compare('manager',$this->manager,true);
-
+        $criteria->compare('city',$this->city,true);
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));

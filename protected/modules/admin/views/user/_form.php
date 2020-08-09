@@ -103,6 +103,15 @@
 		<?php echo $form->error($model,'manager'); ?>
 	</div>
 
+    <div class="row">
+        <?php echo $form->labelEx($model,'city'); ?>
+        <?php echo $form->DropDownList($model,'city',array(
+            '1' => "Москва",
+            '2'=> "Екатеринбург"
+        ) ); ?>
+        <?php echo $form->error($model,'city'); ?>
+    </div>
+
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Создать' : 'Сохранить'); ?>
 	</div>
