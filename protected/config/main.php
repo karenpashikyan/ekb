@@ -69,14 +69,7 @@ return array(
 		 	'tablePrefix'=>'cms_',
 		 ),
 
-		/*'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=u496196_1',
-			'emulatePrepare' => true,
-			'username' => 'u496196',
-			'password' => '964f1ae2',
-			'charset' => 'utf8',
-			'tablePrefix'=>'cms_',
-		),*/
+		
 
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
