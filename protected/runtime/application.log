@@ -14210,3 +14210,256 @@ Stack trace:
 REQUEST_URI=/muzh_na_chas/favicon.ico
 HTTP_REFERER=http://ekb.mini/muzh_na_chas/index
 ---
+2020/08/09 15:18:45 [error] [exception.CException] CException: Не определено свойство "CNumberValidator.0". in C:\OSPanel\domains\ekb.mini\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\OSPanel\domains\ekb.mini\framework\validators\CValidator.php(189): CComponent->__set('0', 'integerOnly')
+#1 C:\OSPanel\domains\ekb.mini\framework\base\CModel.php(287): CValidator::createValidator(0, Object(Request), Array, Array)
+#2 C:\OSPanel\domains\ekb.mini\framework\base\CModel.php(260): CModel->createValidators()
+#3 C:\OSPanel\domains\ekb.mini\framework\base\CModel.php(304): CModel->getValidators('user_id')
+#4 C:\OSPanel\domains\ekb.mini\framework\web\helpers\CHtml.php(1414): CModel->isAttributeRequired('user_id')
+#5 C:\OSPanel\domains\ekb.mini\framework\web\widgets\CActiveForm.php(597): CHtml::activeLabelEx(Object(Request), 'user_id', Array)
+#6 C:\OSPanel\domains\ekb.mini\protected\views\zayavka\_form.php(17): CActiveForm->labelEx(Object(Request), 'user_id')
+#7 C:\OSPanel\domains\ekb.mini\framework\web\CBaseController.php(126): require('C:\\OSPanel\\doma...')
+#8 C:\OSPanel\domains\ekb.mini\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\OSPanel\\doma...', Array, true)
+#9 C:\OSPanel\domains\ekb.mini\framework\web\CController.php(869): CBaseController->renderFile('C:\\OSPanel\\doma...', Array, true)
+#10 C:\OSPanel\domains\ekb.mini\protected\views\zayavka\create.php(17): CController->renderPartial('_form', Array)
+#11 C:\OSPanel\domains\ekb.mini\framework\web\CBaseController.php(126): require('C:\\OSPanel\\doma...')
+#12 C:\OSPanel\domains\ekb.mini\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\OSPanel\\doma...', Array, true)
+#13 C:\OSPanel\domains\ekb.mini\framework\web\CController.php(869): CBaseController->renderFile('C:\\OSPanel\\doma...', Array, true)
+#14 C:\OSPanel\domains\ekb.mini\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#15 C:\OSPanel\domains\ekb.mini\protected\controllers\ZayavkaController.php(186): CController->render('create', Array)
+#16 C:\OSPanel\domains\ekb.mini\framework\web\actions\CInlineAction.php(49): ZayavkaController->actionIndex()
+#17 C:\OSPanel\domains\ekb.mini\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\OSPanel\domains\ekb.mini\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 C:\OSPanel\domains\ekb.mini\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\OSPanel\domains\ekb.mini\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 C:\OSPanel\domains\ekb.mini\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\OSPanel\domains\ekb.mini\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\OSPanel\domains\ekb.mini\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\OSPanel\domains\ekb.mini\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\OSPanel\domains\ekb.mini\framework\web\CWebApplication.php(282): CController->run('')
+#26 C:\OSPanel\domains\ekb.mini\framework\web\CWebApplication.php(141): CWebApplication->runController('zayavka')
+#27 C:\OSPanel\domains\ekb.mini\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#28 C:\OSPanel\domains\ekb.mini\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/zayavka
+HTTP_REFERER=http://ekb.mini/muzh_na_chas/index
+---
+2020/08/09 15:18:58 [error] [exception.CException] CException: Не определено свойство "CNumberValidator.0". in C:\OSPanel\domains\ekb.mini\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\OSPanel\domains\ekb.mini\framework\validators\CValidator.php(189): CComponent->__set('0', 'integerOnly')
+#1 C:\OSPanel\domains\ekb.mini\framework\base\CModel.php(287): CValidator::createValidator(0, Object(Request), Array, Array)
+#2 C:\OSPanel\domains\ekb.mini\framework\base\CModel.php(260): CModel->createValidators()
+#3 C:\OSPanel\domains\ekb.mini\framework\base\CModel.php(304): CModel->getValidators('user_id')
+#4 C:\OSPanel\domains\ekb.mini\framework\web\helpers\CHtml.php(1414): CModel->isAttributeRequired('user_id')
+#5 C:\OSPanel\domains\ekb.mini\framework\web\widgets\CActiveForm.php(597): CHtml::activeLabelEx(Object(Request), 'user_id', Array)
+#6 C:\OSPanel\domains\ekb.mini\protected\views\zayavka\_form.php(17): CActiveForm->labelEx(Object(Request), 'user_id')
+#7 C:\OSPanel\domains\ekb.mini\framework\web\CBaseController.php(126): require('C:\\OSPanel\\doma...')
+#8 C:\OSPanel\domains\ekb.mini\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\OSPanel\\doma...', Array, true)
+#9 C:\OSPanel\domains\ekb.mini\framework\web\CController.php(869): CBaseController->renderFile('C:\\OSPanel\\doma...', Array, true)
+#10 C:\OSPanel\domains\ekb.mini\protected\views\zayavka\create.php(17): CController->renderPartial('_form', Array)
+#11 C:\OSPanel\domains\ekb.mini\framework\web\CBaseController.php(126): require('C:\\OSPanel\\doma...')
+#12 C:\OSPanel\domains\ekb.mini\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\OSPanel\\doma...', Array, true)
+#13 C:\OSPanel\domains\ekb.mini\framework\web\CController.php(869): CBaseController->renderFile('C:\\OSPanel\\doma...', Array, true)
+#14 C:\OSPanel\domains\ekb.mini\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#15 C:\OSPanel\domains\ekb.mini\protected\controllers\ZayavkaController.php(186): CController->render('create', Array)
+#16 C:\OSPanel\domains\ekb.mini\framework\web\actions\CInlineAction.php(49): ZayavkaController->actionIndex()
+#17 C:\OSPanel\domains\ekb.mini\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\OSPanel\domains\ekb.mini\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 C:\OSPanel\domains\ekb.mini\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\OSPanel\domains\ekb.mini\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 C:\OSPanel\domains\ekb.mini\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\OSPanel\domains\ekb.mini\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\OSPanel\domains\ekb.mini\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\OSPanel\domains\ekb.mini\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\OSPanel\domains\ekb.mini\framework\web\CWebApplication.php(282): CController->run('')
+#26 C:\OSPanel\domains\ekb.mini\framework\web\CWebApplication.php(141): CWebApplication->runController('zayavka')
+#27 C:\OSPanel\domains\ekb.mini\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#28 C:\OSPanel\domains\ekb.mini\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/zayavka
+HTTP_REFERER=http://ekb.mini/muzh_na_chas/index
+---
+2020/08/09 15:19:00 [error] [exception.CException] CException: Не определено свойство "CNumberValidator.0". in C:\OSPanel\domains\ekb.mini\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\OSPanel\domains\ekb.mini\framework\validators\CValidator.php(189): CComponent->__set('0', 'integerOnly')
+#1 C:\OSPanel\domains\ekb.mini\framework\base\CModel.php(287): CValidator::createValidator(0, Object(Request), Array, Array)
+#2 C:\OSPanel\domains\ekb.mini\framework\base\CModel.php(260): CModel->createValidators()
+#3 C:\OSPanel\domains\ekb.mini\framework\base\CModel.php(304): CModel->getValidators('user_id')
+#4 C:\OSPanel\domains\ekb.mini\framework\web\helpers\CHtml.php(1414): CModel->isAttributeRequired('user_id')
+#5 C:\OSPanel\domains\ekb.mini\framework\web\widgets\CActiveForm.php(597): CHtml::activeLabelEx(Object(Request), 'user_id', Array)
+#6 C:\OSPanel\domains\ekb.mini\protected\views\zayavka\_form.php(17): CActiveForm->labelEx(Object(Request), 'user_id')
+#7 C:\OSPanel\domains\ekb.mini\framework\web\CBaseController.php(126): require('C:\\OSPanel\\doma...')
+#8 C:\OSPanel\domains\ekb.mini\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\OSPanel\\doma...', Array, true)
+#9 C:\OSPanel\domains\ekb.mini\framework\web\CController.php(869): CBaseController->renderFile('C:\\OSPanel\\doma...', Array, true)
+#10 C:\OSPanel\domains\ekb.mini\protected\views\zayavka\create.php(17): CController->renderPartial('_form', Array)
+#11 C:\OSPanel\domains\ekb.mini\framework\web\CBaseController.php(126): require('C:\\OSPanel\\doma...')
+#12 C:\OSPanel\domains\ekb.mini\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\OSPanel\\doma...', Array, true)
+#13 C:\OSPanel\domains\ekb.mini\framework\web\CController.php(869): CBaseController->renderFile('C:\\OSPanel\\doma...', Array, true)
+#14 C:\OSPanel\domains\ekb.mini\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#15 C:\OSPanel\domains\ekb.mini\protected\controllers\ZayavkaController.php(186): CController->render('create', Array)
+#16 C:\OSPanel\domains\ekb.mini\framework\web\actions\CInlineAction.php(49): ZayavkaController->actionIndex()
+#17 C:\OSPanel\domains\ekb.mini\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\OSPanel\domains\ekb.mini\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 C:\OSPanel\domains\ekb.mini\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\OSPanel\domains\ekb.mini\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 C:\OSPanel\domains\ekb.mini\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\OSPanel\domains\ekb.mini\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\OSPanel\domains\ekb.mini\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\OSPanel\domains\ekb.mini\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\OSPanel\domains\ekb.mini\framework\web\CWebApplication.php(282): CController->run('')
+#26 C:\OSPanel\domains\ekb.mini\framework\web\CWebApplication.php(141): CWebApplication->runController('zayavka')
+#27 C:\OSPanel\domains\ekb.mini\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#28 C:\OSPanel\domains\ekb.mini\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/zayavka
+---
+2020/08/09 15:19:02 [error] [exception.CHttpException.404] CHttpException: Системе не удалось найти запрашиваемое действие "favicon.ico". in C:\OSPanel\domains\ekb.mini\framework\web\CController.php:483
+Stack trace:
+#0 C:\OSPanel\domains\ekb.mini\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 C:\OSPanel\domains\ekb.mini\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 C:\OSPanel\domains\ekb.mini\framework\web\CWebApplication.php(141): CWebApplication->runController('muzh_na_chas/fa...')
+#3 C:\OSPanel\domains\ekb.mini\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\OSPanel\domains\ekb.mini\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/muzh_na_chas/favicon.ico
+HTTP_REFERER=http://ekb.mini/muzh_na_chas/index
+---
+2020/08/09 15:19:04 [error] [exception.CException] CException: Не определено свойство "CNumberValidator.0". in C:\OSPanel\domains\ekb.mini\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\OSPanel\domains\ekb.mini\framework\validators\CValidator.php(189): CComponent->__set('0', 'integerOnly')
+#1 C:\OSPanel\domains\ekb.mini\framework\base\CModel.php(287): CValidator::createValidator(0, Object(Request), Array, Array)
+#2 C:\OSPanel\domains\ekb.mini\framework\base\CModel.php(260): CModel->createValidators()
+#3 C:\OSPanel\domains\ekb.mini\framework\base\CModel.php(304): CModel->getValidators('user_id')
+#4 C:\OSPanel\domains\ekb.mini\framework\web\helpers\CHtml.php(1414): CModel->isAttributeRequired('user_id')
+#5 C:\OSPanel\domains\ekb.mini\framework\web\widgets\CActiveForm.php(597): CHtml::activeLabelEx(Object(Request), 'user_id', Array)
+#6 C:\OSPanel\domains\ekb.mini\protected\views\zayavka\_form.php(17): CActiveForm->labelEx(Object(Request), 'user_id')
+#7 C:\OSPanel\domains\ekb.mini\framework\web\CBaseController.php(126): require('C:\\OSPanel\\doma...')
+#8 C:\OSPanel\domains\ekb.mini\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\OSPanel\\doma...', Array, true)
+#9 C:\OSPanel\domains\ekb.mini\framework\web\CController.php(869): CBaseController->renderFile('C:\\OSPanel\\doma...', Array, true)
+#10 C:\OSPanel\domains\ekb.mini\protected\views\zayavka\create.php(17): CController->renderPartial('_form', Array)
+#11 C:\OSPanel\domains\ekb.mini\framework\web\CBaseController.php(126): require('C:\\OSPanel\\doma...')
+#12 C:\OSPanel\domains\ekb.mini\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\OSPanel\\doma...', Array, true)
+#13 C:\OSPanel\domains\ekb.mini\framework\web\CController.php(869): CBaseController->renderFile('C:\\OSPanel\\doma...', Array, true)
+#14 C:\OSPanel\domains\ekb.mini\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#15 C:\OSPanel\domains\ekb.mini\protected\controllers\ZayavkaController.php(186): CController->render('create', Array)
+#16 C:\OSPanel\domains\ekb.mini\framework\web\actions\CInlineAction.php(49): ZayavkaController->actionIndex()
+#17 C:\OSPanel\domains\ekb.mini\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\OSPanel\domains\ekb.mini\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 C:\OSPanel\domains\ekb.mini\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\OSPanel\domains\ekb.mini\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 C:\OSPanel\domains\ekb.mini\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\OSPanel\domains\ekb.mini\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\OSPanel\domains\ekb.mini\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\OSPanel\domains\ekb.mini\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\OSPanel\domains\ekb.mini\framework\web\CWebApplication.php(282): CController->run('')
+#26 C:\OSPanel\domains\ekb.mini\framework\web\CWebApplication.php(141): CWebApplication->runController('zayavka')
+#27 C:\OSPanel\domains\ekb.mini\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#28 C:\OSPanel\domains\ekb.mini\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/zayavka
+HTTP_REFERER=http://ekb.mini/muzh_na_chas/index
+---
+2020/08/09 15:21:24 [error] [php] include(Mailer.php): failed to open stream: No such file or directory (C:\OSPanel\domains\ekb.mini\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\OSPanel\domains\ekb.mini\protected\models\Request.php(175): spl_autoload_call()
+#1 C:\OSPanel\domains\ekb.mini\framework\db\ar\CActiveRecord.php(1071): Request->beforeSave()
+#2 C:\OSPanel\domains\ekb.mini\framework\db\ar\CActiveRecord.php(806): Request->insert()
+#3 C:\OSPanel\domains\ekb.mini\protected\controllers\ZayavkaController.php(181): Request->save()
+#4 C:\OSPanel\domains\ekb.mini\framework\web\actions\CInlineAction.php(49): ZayavkaController->actionIndex()
+#5 C:\OSPanel\domains\ekb.mini\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\OSPanel\domains\ekb.mini\framework\web\filters\CFilterChain.php(133): ZayavkaController->runAction()
+#7 C:\OSPanel\domains\ekb.mini\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\OSPanel\domains\ekb.mini\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#9 C:\OSPanel\domains\ekb.mini\framework\web\filters\CInlineFilter.php(58): ZayavkaController->filterAccessControl()
+#10 C:\OSPanel\domains\ekb.mini\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#11 C:\OSPanel\domains\ekb.mini\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\OSPanel\domains\ekb.mini\framework\web\CController.php(265): ZayavkaController->runActionWithFilters()
+#13 C:\OSPanel\domains\ekb.mini\framework\web\CWebApplication.php(282): ZayavkaController->run()
+#14 C:\OSPanel\domains\ekb.mini\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\OSPanel\domains\ekb.mini\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\OSPanel\domains\ekb.mini\index.php(13): CWebApplication->run()
+REQUEST_URI=/zayavka
+in C:\OSPanel\domains\ekb.mini\protected\models\Request.php (175)
+in C:\OSPanel\domains\ekb.mini\protected\controllers\ZayavkaController.php (181)
+in C:\OSPanel\domains\ekb.mini\index.php (13)
+2020/08/09 15:23:35 [error] [php] include(Mailer.php): failed to open stream: No such file or directory (C:\OSPanel\domains\ekb.mini\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\OSPanel\domains\ekb.mini\protected\models\Request.php(175): spl_autoload_call()
+#1 C:\OSPanel\domains\ekb.mini\framework\db\ar\CActiveRecord.php(1071): Request->beforeSave()
+#2 C:\OSPanel\domains\ekb.mini\framework\db\ar\CActiveRecord.php(806): Request->insert()
+#3 C:\OSPanel\domains\ekb.mini\protected\controllers\ZayavkaController.php(181): Request->save()
+#4 C:\OSPanel\domains\ekb.mini\framework\web\actions\CInlineAction.php(49): ZayavkaController->actionIndex()
+#5 C:\OSPanel\domains\ekb.mini\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\OSPanel\domains\ekb.mini\framework\web\filters\CFilterChain.php(133): ZayavkaController->runAction()
+#7 C:\OSPanel\domains\ekb.mini\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\OSPanel\domains\ekb.mini\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#9 C:\OSPanel\domains\ekb.mini\framework\web\filters\CInlineFilter.php(58): ZayavkaController->filterAccessControl()
+#10 C:\OSPanel\domains\ekb.mini\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#11 C:\OSPanel\domains\ekb.mini\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\OSPanel\domains\ekb.mini\framework\web\CController.php(265): ZayavkaController->runActionWithFilters()
+#13 C:\OSPanel\domains\ekb.mini\framework\web\CWebApplication.php(282): ZayavkaController->run()
+#14 C:\OSPanel\domains\ekb.mini\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\OSPanel\domains\ekb.mini\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\OSPanel\domains\ekb.mini\index.php(13): CWebApplication->run()
+REQUEST_URI=/zayavka
+in C:\OSPanel\domains\ekb.mini\protected\models\Request.php (175)
+in C:\OSPanel\domains\ekb.mini\protected\controllers\ZayavkaController.php (181)
+in C:\OSPanel\domains\ekb.mini\index.php (13)
+2020/08/09 15:23:37 [error] [php] include(Mailer.php): failed to open stream: No such file or directory (C:\OSPanel\domains\ekb.mini\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\OSPanel\domains\ekb.mini\protected\models\Request.php(175): spl_autoload_call()
+#1 C:\OSPanel\domains\ekb.mini\framework\db\ar\CActiveRecord.php(1071): Request->beforeSave()
+#2 C:\OSPanel\domains\ekb.mini\framework\db\ar\CActiveRecord.php(806): Request->insert()
+#3 C:\OSPanel\domains\ekb.mini\protected\controllers\ZayavkaController.php(181): Request->save()
+#4 C:\OSPanel\domains\ekb.mini\framework\web\actions\CInlineAction.php(49): ZayavkaController->actionIndex()
+#5 C:\OSPanel\domains\ekb.mini\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\OSPanel\domains\ekb.mini\framework\web\filters\CFilterChain.php(133): ZayavkaController->runAction()
+#7 C:\OSPanel\domains\ekb.mini\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\OSPanel\domains\ekb.mini\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#9 C:\OSPanel\domains\ekb.mini\framework\web\filters\CInlineFilter.php(58): ZayavkaController->filterAccessControl()
+#10 C:\OSPanel\domains\ekb.mini\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#11 C:\OSPanel\domains\ekb.mini\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\OSPanel\domains\ekb.mini\framework\web\CController.php(265): ZayavkaController->runActionWithFilters()
+#13 C:\OSPanel\domains\ekb.mini\framework\web\CWebApplication.php(282): ZayavkaController->run()
+#14 C:\OSPanel\domains\ekb.mini\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\OSPanel\domains\ekb.mini\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\OSPanel\domains\ekb.mini\index.php(13): CWebApplication->run()
+REQUEST_URI=/zayavka
+in C:\OSPanel\domains\ekb.mini\protected\models\Request.php (175)
+in C:\OSPanel\domains\ekb.mini\protected\controllers\ZayavkaController.php (181)
+in C:\OSPanel\domains\ekb.mini\index.php (13)
+2020/08/09 15:51:51 [error] [exception.TypeError] TypeError: Argument 1 passed to Mailer::__construct() must be an instance of Request, none given, called in C:\OSPanel\domains\ekb.mini\protected\models\Request.php on line 175 and defined in C:\OSPanel\domains\ekb.mini\protected\helper\mail\Mailer.php:26
+Stack trace:
+#0 C:\OSPanel\domains\ekb.mini\protected\models\Request.php(175): Mailer->__construct()
+#1 C:\OSPanel\domains\ekb.mini\framework\db\ar\CActiveRecord.php(1071): Request->beforeSave()
+#2 C:\OSPanel\domains\ekb.mini\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#3 C:\OSPanel\domains\ekb.mini\protected\controllers\ZayavkaController.php(181): CActiveRecord->save()
+#4 C:\OSPanel\domains\ekb.mini\framework\web\actions\CInlineAction.php(49): ZayavkaController->actionIndex()
+#5 C:\OSPanel\domains\ekb.mini\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\OSPanel\domains\ekb.mini\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 C:\OSPanel\domains\ekb.mini\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\OSPanel\domains\ekb.mini\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 C:\OSPanel\domains\ekb.mini\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\OSPanel\domains\ekb.mini\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\OSPanel\domains\ekb.mini\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\OSPanel\domains\ekb.mini\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\OSPanel\domains\ekb.mini\framework\web\CWebApplication.php(282): CController->run('')
+#14 C:\OSPanel\domains\ekb.mini\framework\web\CWebApplication.php(141): CWebApplication->runController('zayavka')
+#15 C:\OSPanel\domains\ekb.mini\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\OSPanel\domains\ekb.mini\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/zayavka
+HTTP_REFERER=http://ekb.mini/zayavka
+---
+2020/08/09 15:52:31 [error] [exception.CHttpException.404] CHttpException: Системе не удалось найти запрашиваемое действие "favicon.ico". in C:\OSPanel\domains\ekb.mini\framework\web\CController.php:483
+Stack trace:
+#0 C:\OSPanel\domains\ekb.mini\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 C:\OSPanel\domains\ekb.mini\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 C:\OSPanel\domains\ekb.mini\framework\web\CWebApplication.php(141): CWebApplication->runController('zayavka/favicon...')
+#3 C:\OSPanel\domains\ekb.mini\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\OSPanel\domains\ekb.mini\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/zayavka/favicon.ico
+HTTP_REFERER=http://ekb.mini/zayavka/190
+---

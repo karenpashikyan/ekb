@@ -172,46 +172,10 @@ class Request extends CActiveRecord
     public function beforeSave()
     {
         if ($this->isNewRecord) {
-            $this->time_finish = time();
-            //to get ID a current request's order for a request name
-            $command = Yii::app()->db->createCommand();
-            $lastRequestId = $command->select('id')->from('cms_request')->order('id desc')->limit(1)->queryRow();
-            $currentRequestOrder = $lastRequestId["id"] + 1;
-
-            $name = 'Zayavka - ' . $currentRequestOrder;
-            $subject = 'master-na-chas (ekb)';
-            $headers = "From: $name <{$this->attributes["short_discription"]}>\r\n" .
-                "Reply-To: " . Yii::app()->params['adminEmail'] . "\r\n" .
-                "MIME-Version: 1.0\r\n" .
-                "Content-Type: text/html; charset=utf-8";
-
-            $message = "
-            Заявка № " . $currentRequestOrder . "<br>
-            Промокод: " . $this->attributes["user_id"] . "<br>
-            Имя: " . $this->title . "<br>
-            Телефон: " . $this->time_start . "<br>
-            Адрес: " . $this->attributes["address"] . "<br>
-            E-mail: " . $this->attributes["short_description"] . "<br>
-            Комментарий: " . $this->description . "<br>
-            Время отправки: " . $this->getLocalTime(2,$this->attributes["time_finish"]) . "<br>
-            ";
-
-            mail(Yii::app()->params['adminEmail'], $subject, $message, $headers);
+            (new Mailer($this))->mail();
             //mail(Yii::app()->params['adminEmail'],$subject, $model->time_start, $headers);
             $this->refresh();
             return parent::beforeSave();
         }
-    }
-
-    /**
-     * @param $hours
-     * @param $time
-     * @return false|string
-     * Time counts by the Moscow's Time Zone
-     */
-    private function getLocalTime($hours,$time)
-    {
-        $time = $time + $hours*60*60;
-        return date("m-d-Y H:i:s", $time);
     }
 }
