@@ -26,15 +26,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3245d928-eb33-4e56-8945-21cb026146f1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/protected/helper/mail/Mailer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/config/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/config/main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/models/Request.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/models/Request.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/application.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/application.log.1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/application.log.2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/application.log.3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/application.log.4" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/application.log.4" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +47,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/PhpstormProjects/ekb-remote" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -74,6 +66,8 @@
       <workItem from="1596859227501" duration="8739000" />
       <workItem from="1596872452705" duration="15927000" />
       <workItem from="1596946054136" duration="10907000" />
+      <workItem from="1597121981558" duration="4123000" />
+      <workItem from="1597466506377" duration="1299000" />
     </task>
     <servers />
   </component>
@@ -114,10 +108,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="93" y="93" width="1095" height="495" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1596884033497" />
-    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1596970251180">
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1597466982248">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1596970251180" />
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1597466982248" />
     <state x="422" y="64" key="NewPhpClassDialog" timestamp="1596975310818">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
